@@ -7,23 +7,26 @@ int main()
     cout<<"Enter the size of the array : ";
     cin>>s;
     int d,m;
+    int ans = 0,c=0;
     cout<<"Enter the value of d and m respectively : "<<endl;
     cin>>d;
     cin>>m;
-    int a[10], a2[10];
+    int a[200];  
+    cout<<"Enter the elements"<<endl;
     for(int i=0; i<s; i++)
     {
         cin>>a[i];
-        a2[i]=a2[i]+a[i];
     }
-    int ans = 0;
-    for(int i=m; i<=s;i++)
+    for(int i=0;i<s;i++)
     {
-        if(a2[i]-a2[i-m]==d)
+        ans =0;
+        for(int j =0;j<m;j++)
+        ans = ans + a[i+j];
+        if(ans==d)
         {
-            ans;
+            c++;
         }
     }
-    cout<<ans<<endl;
+    cout<<"Answers : "<<c<<endl;
     return 0;
 }
