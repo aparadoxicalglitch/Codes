@@ -20,14 +20,32 @@ string replaceSpaces(string &str)
     return temp;
 }
 
+string replaceSpace(string &str)
+{
+
+    int l = str.length();
+    string rep = "@40";
+    for (int i = 0; i <=l; i++)
+    {
+        if (str[i] == ' ')
+        {
+            str.replace(i, 1, rep);
+        }
+    } // having some problem here 
+    return str;
+}
+
 int main()
 {
-    string s; 
-    cout<<"Enter the string : "; 
+    string s;
+    cout << "Enter the string : ";
     getline(cin, s);
 
     string ans = replaceSpaces(s);
-    cout<<ans<<endl;
+    cout << ans << endl;
+
+    string ans1 = replaceSpace(s);
+    cout << ans1 << endl;
 
     return 0;
 }
