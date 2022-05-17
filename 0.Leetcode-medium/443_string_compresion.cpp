@@ -32,6 +32,7 @@ public:
                     chars[ansIndex++]=ch;
                 }
             }
+            // moving to new/Different character
             i = j;
         }
         return ansIndex;
