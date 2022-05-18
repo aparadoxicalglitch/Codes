@@ -36,6 +36,7 @@ int main()
     cout<<"Enter the number of columns : ";
     cin>>c;
     cout<<"Enter the elements of the matrix"<<endl;
+    // to take input in vector matrix
     for(int i=0; i<r; i++)
     {
         vector<int> vec;
