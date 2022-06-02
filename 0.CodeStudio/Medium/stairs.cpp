@@ -12,4 +12,4 @@ int countDistinctWayToClimbStair(long long nStairs)
         + countDistinctWayToClimbStair(nStairs-2);
     
     return ans;
-}
+} 
