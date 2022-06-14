@@ -25,7 +25,7 @@ private:
         }
     }
 
-public:
+public: 
     vector<string> letterCombinations(string digits)
     {
         vector<string> ans;
