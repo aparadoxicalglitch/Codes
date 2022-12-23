@@ -1,5 +1,5 @@
 #include<stack>
-#include<stdio.h>
+#include<iostream>
 #include<limits.h>
 class SpecialStack {
     // Define the data members.
